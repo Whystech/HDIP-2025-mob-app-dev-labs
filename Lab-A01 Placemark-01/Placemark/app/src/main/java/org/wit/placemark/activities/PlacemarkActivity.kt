@@ -28,7 +28,7 @@ class PlacemarkActivity : AppCompatActivity() {
             placemark.description = binding.placemarkDescription.text.toString()
             if (placemark.title.isNotEmpty() && placemark.description.isNotEmpty()) {
                 i("add Button Pressed: ${placemark.title}, placemarks are:")
-                placemarks.add(placemark)
+                placemarks.add(placemark.copy())
                 i("Placemarks are $placemarks")
 
                 Toast
